@@ -2,7 +2,7 @@ Single-Cycle / Pipelined RISC-V Processor
 
 Overview
 
-This repository contains the Verilog implementation of a RISC-V processor designed for the CSC311 – Introduction to Computer Architecture course at Nile University. The processor supports arithmetic, logical, memory, and branch instructions. It has been implemented as a single-cycle design and later adapted to a pipelined version to improve instruction throughput.
+This repository contains the Verilog implementation of a RISC-V processor designed for the Computer Architecture course. The processor supports arithmetic, logical, memory, and branch instructions. It has been implemented as a single-cycle design and later adapted to a pipelined version to improve instruction throughput.
 
 Features
 
