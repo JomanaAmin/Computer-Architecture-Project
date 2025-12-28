@@ -72,10 +72,10 @@ module PipelinedDatapathProcessor(
 
     register regfile(
         .clk(clk),
-        .we(RegWrite),
+      .we(wb_RegWrite),
         .rs1(rs1),
         .rs2(rs2),
-        .rd(rd),
+      .rd(wb_rd),
         .wd(writeData),
         .rd1(readData1),
         .rd2(readData2)
@@ -167,6 +167,7 @@ module PipelinedDatapathProcessor(
     assign PCSrc = ex_Branch & Zero; //to check whether pc will be updated by offset or normal +4
   assign BranchTarget = ex_PC + (ex_immediate<<1); //branch that we will take in case PCSrc is 1.
   
+  
   //EX/MEM Pipeline
   wire [63:0] mem_ALU_result;
   wire [63:0] mem_readData2;
@@ -184,7 +185,7 @@ module PipelinedDatapathProcessor(
     .EX_ALUResult(ALU_result),
     .EX_rdata2(ex_readData2),
     .EX_PCBranch(ex_BranchTarget), //PC+Immediate
-    .EX_Zero(ex_Zero),
+    .EX_Zero(Zero),
     .EX_rd(ex_rd),
     .EX_RegWrite(ex_RegWrite),
     .EX_MemtoReg(ex_MemtoReg),
