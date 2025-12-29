@@ -1,0 +1,299 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 12/29/2025 01:54:04 AM
+// Design Name: 
+// Module Name: PipelineProcessor
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+`timescale 1ns / 1ps
+
+module PipelineProcessor(
+    input wire clk,
+    input wire reset,
+    input wire flush
+);
+
+    wire [63:0] ALU_in1;
+    wire [63:0] ALU_in2;
+    wire [63:0] mem_BranchTarget;
+    
+    // all possible PC
+    wire [63:0] PC, PC_next, PC_plus4;
+    wire PCSrc; // (branch AND zero flag from alu)
+    wire [63:0] ex_BranchTarget; //which is PC+offset (immediate value)
+    reg PCWrite;
+    initial PCWrite = 1;
+    
+    PC_Unit pc_unit(
+        .clk(clk),
+        .reset(reset),
+        .PCWrite(PCWrite),
+      .BranchTaken(PCSrc),
+      .BranchTarget(mem_BranchTarget),
+        .PC(PC)
+    );
+
+    // Instruction Memory
+    wire [31:0] currInstruction;
+    InstructionMemory InstrucMem(
+        .address(PC),
+        .instruction(currInstruction)
+    );
+    assign flush = PCSrc;
+
+    //IF/ID pipeline register
+    wire [63:0] id_PC;
+    wire [31:0] id_instruction;
+  
+    IF_ID if_id_pipelineReg(
+      .clk(clk),
+      .reset(reset),
+      .flush(flush),
+      .IF_PC(PC),
+      .IF_instruction(currInstruction),
+      
+      .ID_PC(id_PC),
+      .ID_instruction(id_instruction)
+);
+  
+    // Instruction fields default to R type, immediate values handled by another module
+    wire [6:0] opcode = id_instruction[6:0];
+    wire [4:0] rd     = id_instruction[11:7];
+    wire [2:0] func3  = id_instruction[14:12];
+    wire [4:0] rs1    = id_instruction[19:15];
+    wire [4:0] rs2    = id_instruction[24:20];
+    wire [6:0] func7  = id_instruction[31:25];
+
+    // Control Signals based on instruction code
+    wire Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite;
+    wire [1:0] ALUOp;
+    ControlUnit ctrl(
+        .opcode(opcode),
+        .Branch(Branch),
+        .MemRead(MemRead),
+        .MemtoReg(MemtoReg),
+        .MemWrite(MemWrite),
+        .ALUSrc(ALUSrc),
+        .RegWrite(RegWrite),
+        .ALUOp(ALUOp)
+    );
+
+    // Registers
+    wire [63:0] readData1, readData2;
+    wire [63:0] writeData = wb_MemtoReg ? wb_memReadData : wb_ALU_result;
+
+    Register regfile(
+        .clk(clk),
+      .we(wb_RegWrite),
+        .rs1(rs1),
+        .rs2(rs2),
+      .rd(wb_rd),
+        .wd(writeData),
+        .rd1(readData1),
+        .rd2(readData2)
+    );
+
+    // Immediate
+  wire [63:0] immediate;
+    Immediate ImmGen(
+        .instr(id_instruction),
+        .imm(immediate)
+    ); // this module returns the extended immediate value
+
+  //ID/EX Pipleline register
+  wire [63:0] ex_readData1;
+  wire [63:0] ex_readData2;
+  wire [63:0] ex_immediate;
+  wire [4:0] ex_rd;
+  wire [63:0] ex_PC;
+  wire [2:0] ex_func3;
+  wire [6:0] ex_func7;
+  wire ex_RegWrite;
+  wire ex_MemtoReg;
+  wire ex_MemRead;
+  wire ex_MemWrite;
+  wire ex_ALUSrc;
+  wire ex_Branch;
+  wire [1:0] ex_ALUOp;
+  wire [4:0] ex_rs1;
+  wire [4:0] ex_rs2;
+  
+  ID_EX id_ex_pipelineReg(
+    .clk(clk),
+    .flush(flush),
+    .reset(reset),
+    .ID_rdata1(readData1),
+    .ID_rdata2(readData2),
+    .ID_rs1(rs1),
+    .ID_rs2(rs2),
+    .ID_imm(immediate),
+    .ID_rd(rd),
+    .ID_PC(id_PC),
+    .ID_func3(func3),
+    .ID_func7(func7),
+    .ID_RegWrite(RegWrite),
+    .ID_MemtoReg(MemtoReg),
+    .ID_MemRead(MemRead),
+    .ID_MemWrite(MemWrite),
+    .ID_ALUSrc(ALUSrc),
+    .ID_Branch(Branch),
+    .ID_ALUOp(ALUOp),
+    
+    .EX_rdata1(ex_readData1),
+    .EX_rdata2(ex_readData2),
+    .EX_rs1(ex_rs1),
+    .EX_rs2(ex_rs2),
+    .EX_imm(ex_immediate),
+    .EX_rd(ex_rd),
+    .EX_PC(ex_PC),
+    .EX_func3(ex_func3),
+    .EX_func7(ex_func7),
+    .EX_RegWrite(ex_RegWrite),
+    .EX_MemtoReg(ex_MemtoReg),
+    .EX_MemRead(ex_MemRead),
+    .EX_MemWrite(ex_MemWrite),
+    .EX_ALUSrc(ex_ALUSrc),
+    .EX_Branch(ex_Branch),
+    .EX_ALUOp(ex_ALUOp)
+);
+  
+  
+  //Forwarding logic for data hazard
+   wire [1:0] forwardA, forwardB;
+
+    ForwardingUnit forward_unit(
+      .EX_rs1(ex_rs1),  // EX stage uses rs1/rs2 from instruction
+      .EX_rs2(ex_rs2),
+        .MEM_rd(mem_rd),
+        .WB_rd(wb_rd),
+        .MEM_RegWrite(mem_RegWrite),
+        .WB_RegWrite(wb_RegWrite),
+        .forwardA(forwardA),
+        .forwardB(forwardB)
+    );
+
+// ALU Input MUX with forwarding
+wire [63:0] forward_mux_outB;
+assign forward_mux_outB = (forwardB == 2'b10) ? mem_ALU_result : //
+                          (forwardB == 2'b01) ? writeData : 
+                          ex_readData2;
+
+// ALU src immediate or register
+assign ALU_in1 = (forwardA == 2'b10) ? mem_ALU_result :
+                 (forwardA == 2'b01) ? writeData : 
+                 ex_readData1;
+
+assign ALU_in2 = (ex_ALUSrc) ? ex_immediate : forward_mux_outB;
+
+    // ALU Control
+    wire [3:0] ALUCtl;
+    ALUControl alu_ctrl(
+        .ALUOp(ex_ALUOp),
+        .func3(ex_func3),
+      .func7(ex_func7),
+        .ALUCtl(ALUCtl)
+    );
+ 
+    wire [63:0] ex_ALU_result;
+    wire ex_Zero; //zero flag
+  ALU alu( //this will perform the operation based on the inputs and alu control signal
+    .A(ALU_in1),
+        .B(ALU_in2),
+        .ALUCtl(ALUCtl),
+    .ALUOut(ex_ALU_result),
+    .Zero(ex_Zero)
+    );
+
+    
+  assign ex_BranchTarget = ex_PC + (ex_immediate<<1); //branch that we will take in case PCSrc is 1.
+  
+  
+  //EX/MEM Pipeline
+  wire [63:0] mem_ALU_result;
+  wire [63:0] mem_readData2;
+  wire mem_Zero;
+  wire [4:0] mem_rd;
+  wire mem_RegWrite;
+  wire mem_MemtoReg;
+  wire mem_MemRead;
+  wire mem_MemWrite;
+  wire mem_Branch;
+  EX_MEM ex_mem_pipelineReg(
+    .clk(clk),
+    .reset(reset),
+    .EX_ALUResult(ex_ALU_result),
+    .EX_rdata2(forward_mux_outB),
+    .EX_PCBranch(ex_BranchTarget), 
+    .EX_Zero(ex_Zero),
+    .EX_rd(ex_rd),
+    .EX_RegWrite(ex_RegWrite),
+    .EX_MemtoReg(ex_MemtoReg),
+    .EX_MemRead(ex_MemRead),
+    .EX_MemWrite(ex_MemWrite),
+    .EX_Branch(ex_Branch),
+    
+    .MEM_ALUResult(mem_ALU_result),
+    .MEM_rdata2(mem_readData2),
+    .MEM_PCBranch(mem_BranchTarget),
+    .MEM_Zero(mem_Zero),
+    .MEM_rd(mem_rd),
+    .MEM_RegWrite(mem_RegWrite),
+    .MEM_MemtoReg(mem_MemtoReg),
+    .MEM_MemRead(mem_MemRead),
+    .MEM_MemWrite(mem_MemWrite),
+    .MEM_Branch(mem_Branch)
+);
+
+    // Data Memory
+  wire [63:0] memReadData; //data read from memory if load
+    DataMemory DataMem(
+        .clk(clk),
+      .address(mem_ALU_result[31:0]), //in case of ld/sd we will use alu output (offset+base)
+      .writeData(mem_readData2), //in case of store, we will use also data read from rs2 to store it in memory 
+      .memWrite(mem_MemWrite), //signal to store to memory from control unit
+      .memRead(mem_MemRead), //signal to read from memory in case of load
+      .readData(memReadData) //data fetched/read from memory in case of load
+    );//this module will check if memwrite is 1 (store), if not it will check if memread is 1 (load), if memread is 1, it will read from memory and transfer data to memReadData, if it is 0 it will store 0 in memReadData
+    // Branch Logic
+
+    assign PCSrc = mem_Branch & mem_Zero; //to check whether pc will be updated by offset or normal +4
+
+  //MEM/WB Pipeline register
+  
+  wire [63:0] wb_ALU_result;
+  wire [63:0] wb_memReadData;
+  wire [4:0]  wb_rd;
+  wire wb_RegWrite;
+  wire wb_MemtoReg;
+
+  MEM_WB mem_wb_pipelineReg(
+    .clk(clk),
+    .reset(reset),
+    .MEM_ALUResult(mem_ALU_result),
+    .MEM_MemData(memReadData),
+    .MEM_rd(mem_rd),
+    .MEM_RegWrite(mem_RegWrite),
+    .MEM_MemtoReg(mem_MemtoReg),
+    
+    .WB_ALUResult(wb_ALU_result),
+    .WB_MemData(wb_memReadData),
+    .WB_rd(wb_rd),
+    .WB_RegWrite(wb_RegWrite),
+    .WB_MemtoReg(wb_MemtoReg)
+);
+
+endmodule

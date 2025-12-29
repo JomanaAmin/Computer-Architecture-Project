@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+_________________________________________
+          SIMULATION COMPLETED           
+Register x7  :                    0
+Register x17 :                   23
+Register x18 :                    0
+Register x24 :                    0
+Memory [48]  :                    0
+$stop called at time : 520 ns : File "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" Line 45

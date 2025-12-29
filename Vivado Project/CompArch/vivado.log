@@ -1,0 +1,1405 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Dec 29 02:41:40 2025
+# Process ID         : 16016
+# Current directory  : E:/CompArch
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3528 E:\CompArch\ComputerArchitecture.xpr
+# Log file           : E:/CompArch/vivado.log
+# Journal file       : E:/CompArch\vivado.jou
+# Running On         : Warrior
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16858 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 25985 MB
+# Available Virtual  : 4853 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/CompArch/ComputerArchitecture.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\ac701\1.4\board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.6\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.7 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.7\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.0\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.1\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\sp701\1.0\board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\sp701\1.1\board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.4\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.5 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.5\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc709\1.8\board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'E:/Projects/ComputerArchitecture/Computer-Architecture-Project/ComputerArchitecture' since last save.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.0\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.1\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc706\1.4\board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.5 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc706\1.5\board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.3\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.4\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu104\1.1\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/CompArch/ComputerArchitecture.gen/sources_1'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.4\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.5\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.6\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\ac701\1.4\board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at C:/AMDDesignTools/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:49 ; elapsed = 00:00:25 . Memory (MB): peak = 1661.184 ; gain = 191.605
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Dec 29 02:42:34 2025
+
+INFO: [Vivado 12-12493] Simulation top is 'TestBench1_tb'
+INFO: [Vivado 12-5682] Launching behavioral siexit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 29 02:46:03 2025...
+ [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TestBench1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Immediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineProcessor
+WARNING: [VRFC 10-2938] 'mem_BranchTarget' is already implicitly declared on line 43 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:232]
+WARNING: [VRFC 10-2938] 'mem_rd' is already implicitly declared on line 178 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:234]
+WARNING: [VRFC 10-2938] 'mem_RegWrite' is already implicitly declared on line 180 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:235]
+WARNING: [VRFC 10-2938] 'wb_rd' is already implicitly declared on line 101 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:284]
+WARNING: [VRFC 10-2938] 'wb_RegWrite' is already implicitly declared on line 98 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:285]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:190]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:195]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestBench1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 64 for port 'A' [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:217]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 64 for port 'B' [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:218]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_Unit
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Register
+Compiling module xil_defaultlib.Immediate
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.ForwardingUnit
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.PipelineProcessor
+Compiling module xil_defaultlib.TestBench1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TestBench1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TestBench1_tb_behav -key {Behavioral:sim_1:Functional:TestBench1_tb} -tclbatch {TestBench1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TestBench1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time=0 | PC=0000000000000000 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=5000 | PC=0000000000000000 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=25000 | PC=0000000000000004 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=35000 | PC=0000000000000008 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=45000 | PC=000000000000000c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=55000 | PC=0000000000000010 | ALU_Out=                   x | FwdA=00 | FwdB=10
+Time=65000 | PC=0000000000000014 | ALU_Out=                   x | FwdA=01 | FwdB=10
+Time=75000 | PC=0000000000000018 | ALU_Out=                   x | FwdA=10 | FwdB=00
+Time=85000 | PC=000000000000001c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=95000 | PC=0000000000000020 | ALU_Out=                   x | FwdA=10 | FwdB=10
+Time=105000 | PC=0000000000000024 | ALU_Out=                   x | FwdA=00 | FwdB=01
+Time=115000 | PC=0000000000000028 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=125000 | PC=000000000000002c | ALU_Out=                   x | FwdA=10 | FwdB=00
+Time=135000 | PC=0000000000000030 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=145000 | PC=000000000000003X | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=155000 | PC=xxxxxxxxxxxxxxxx | ALU_Out=                   x | FwdA=00 | FwdB=00
+Simulation Finished
+Register x3 Value:                    0
+$stop called at time : 220 ns : File "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" Line 72
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TestBench1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1669.137 ; gain = 6.508
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Dec 29 02:46:32 2025
+
+INFO: [Vivado 12-12493] Simulation top is 'TestBench1_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TestBench1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Immediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineProcessor
+WARNING: [VRFC 10-2938] 'mem_BranchTarget' is already implicitly declared on line 43 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:232]
+WARNING: [VRFC 10-2938] 'mem_rd' is already implicitly declared on line 178 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:234]
+WARNING: [VRFC 10-2938] 'mem_RegWrite' is already implicitly declared on line 180 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:235]
+WARNING: [VRFC 10-2938] 'wb_rd' is already implicitly declared on line 101 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:284]
+WARNING: [VRFC 10-2938] 'wb_RegWrite' is already implicitly declared on line 98 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:285]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:190]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:195]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestBench1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 64 for port 'A' [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:217]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 64 for port 'B' [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:218]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_Unit
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Register
+Compiling module xil_defaultlib.Immediate
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.ForwardingUnit
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.PipelineProcessor
+Compiling module xil_defaultlib.TestBench1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TestBench1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TestBench1_tb_behav -key {Behavioral:sim_1:Functional:TestBench1_tb} -tclbatch {TestBench1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TestBench1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time=0 | PC=0000000000000000 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=5000 | PC=0000000000000000 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=25000 | PC=0000000000000004 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=35000 | PC=0000000000000008 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=45000 | PC=000000000000000c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=55000 | PC=0000000000000010 | ALU_Out=                   x | FwdA=00 | FwdB=10
+Time=65000 | PC=0000000000000014 | ALU_Out=                   x | FwdA=01 | FwdB=10
+Time=75000 | PC=0000000000000018 | ALU_Out=                   x | FwdA=10 | FwdB=00
+Time=85000 | PC=000000000000001c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=95000 | PC=0000000000000020 | ALU_Out=                   x | FwdA=10 | FwdB=10
+Time=105000 | PC=0000000000000024 | ALU_Out=                   x | FwdA=00 | FwdB=01
+Time=115000 | PC=0000000000000028 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=125000 | PC=000000000000002c | ALU_Out=                   x | FwdA=10 | FwdB=00
+Time=135000 | PC=0000000000000030 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=145000 | PC=000000000000003X | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=155000 | PC=xxxxxxxxxxxxxxxx | ALU_Out=                   x | FwdA=00 | FwdB=00
+Simulation Finished
+Register x3 Value:                    0
+$stop called at time : 220 ns : File "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" Line 72
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TestBench1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1700.344 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\IF_ID.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Dec 29 02:56:27 2025
+
+INFO: [Vivado 12-12493] Simulation top is 'TestBench1_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TestBench1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Immediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineProcessor
+WARNING: [VRFC 10-2938] 'mem_rd' is already implicitly declared on line 183 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:239]
+WARNING: [VRFC 10-2938] 'mem_RegWrite' is already implicitly declared on line 185 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:240]
+WARNING: [VRFC 10-2938] 'wb_rd' is already implicitly declared on line 106 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:289]
+WARNING: [VRFC 10-2938] 'wb_RegWrite' is already implicitly declared on line 103 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:290]
+WARNING: [VRFC 10-3380] identifier 'wb_MemtoReg' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:99]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:200]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestBench1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_Unit
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Register
+Compiling module xil_defaultlib.Immediate
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.ForwardingUnit
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.PipelineProcessor
+Compiling module xil_defaultlib.TestBench1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TestBench1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TestBench1_tb_behav -key {Behavioral:sim_1:Functional:TestBench1_tb} -tclbatch {TestBench1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TestBench1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time=0 | PC=0000000000000000 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=5000 | PC=0000000000000000 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=25000 | PC=0000000000000004 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=35000 | PC=0000000000000008 | ALU_Out=                   7 | FwdA=00 | FwdB=00
+Time=45000 | PC=000000000000000c | ALU_Out=                   2 | FwdA=00 | FwdB=00
+Time=55000 | PC=0000000000000010 | ALU_Out=                   4 | FwdA=00 | FwdB=10
+Time=65000 | PC=0000000000000014 | ALU_Out=                   6 | FwdA=01 | FwdB=10
+Time=75000 | PC=0000000000000018 | ALU_Out=                   0 | FwdA=10 | FwdB=00
+Time=85000 | PC=000000000000001c | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=95000 | PC=0000000000000020 | ALU_Out=                   0 | FwdA=10 | FwdB=10
+Time=105000 | PC=0000000000000024 | ALU_Out=                  48 | FwdA=00 | FwdB=01
+Time=115000 | PC=0000000000000028 | ALU_Out=                  48 | FwdA=00 | FwdB=00
+Time=125000 | PC=000000000000002c | ALU_Out=                  48 | FwdA=10 | FwdB=00
+Time=135000 | PC=0000000000000030 | ALU_Out=                   7 | FwdA=00 | FwdB=00
+Time=145000 | PC=0000000000000034 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=155000 | PC=0000000000000038 | ALU_Out=                  23 | FwdA=00 | FwdB=00
+Time=165000 | PC=000000000000003c | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=175000 | PC=0000000000000040 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=185000 | PC=0000000000000044 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=195000 | PC=0000000000000048 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=205000 | PC=000000000000004c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=215000 | PC=0000000000000050 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Simulation Finished
+Register x3 Value:                    0
+$stop called at time : 220 ns : File "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" Line 72
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TestBench1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2519.906 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Dec 29 03:07:02 2025
+
+INFO: [Vivado 12-12493] Simulation top is 'TestBench1_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TestBench1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TestBench1_tb_behav -key {Behavioral:sim_1:Functional:TestBench1_tb} -tclbatch {TestBench1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TestBench1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time=0 | PC=0000000000000000 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=5000 | PC=0000000000000000 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=25000 | PC=0000000000000004 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=35000 | PC=0000000000000008 | ALU_Out=                   7 | FwdA=00 | FwdB=00
+Time=45000 | PC=000000000000000c | ALU_Out=                   2 | FwdA=00 | FwdB=00
+Time=55000 | PC=0000000000000010 | ALU_Out=                   4 | FwdA=00 | FwdB=10
+Time=65000 | PC=0000000000000014 | ALU_Out=                   6 | FwdA=01 | FwdB=10
+Time=75000 | PC=0000000000000018 | ALU_Out=                   0 | FwdA=10 | FwdB=00
+Time=85000 | PC=000000000000001c | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=95000 | PC=0000000000000020 | ALU_Out=                   0 | FwdA=10 | FwdB=10
+Time=105000 | PC=0000000000000024 | ALU_Out=                  48 | FwdA=00 | FwdB=01
+Time=115000 | PC=0000000000000028 | ALU_Out=                  48 | FwdA=00 | FwdB=00
+Time=125000 | PC=000000000000002c | ALU_Out=                  48 | FwdA=10 | FwdB=00
+Time=135000 | PC=0000000000000030 | ALU_Out=                   7 | FwdA=00 | FwdB=00
+Time=145000 | PC=0000000000000034 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=155000 | PC=0000000000000038 | ALU_Out=                  23 | FwdA=00 | FwdB=00
+Time=165000 | PC=000000000000003c | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=175000 | PC=0000000000000040 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=185000 | PC=0000000000000044 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=195000 | PC=0000000000000048 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=205000 | PC=000000000000004c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=215000 | PC=0000000000000050 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Simulation Finished
+Register x3 Value:                    0
+$stop called at time : 220 ns : File "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" Line 72
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TestBench1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2519.906 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Dec 29 03:11:40 2025
+
+INFO: [Vivado 12-12493] Simulation top is 'TestBench1_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TestBench1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Immediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineProcessor
+WARNING: [VRFC 10-2938] 'mem_rd' is already implicitly declared on line 183 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:239]
+WARNING: [VRFC 10-2938] 'mem_RegWrite' is already implicitly declared on line 185 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:240]
+WARNING: [VRFC 10-2938] 'wb_rd' is already implicitly declared on line 106 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:289]
+WARNING: [VRFC 10-2938] 'wb_RegWrite' is already implicitly declared on line 103 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:290]
+WARNING: [VRFC 10-3380] identifier 'wb_MemtoReg' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:99]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:200]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestBench1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'regfile' [E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v:43]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'regfile' [E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v:44]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'regfile' [E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v:45]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'regfile' [E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v:46]
+ERROR: [VRFC 10-2991] 'registers' is not declared under prefix 'regfile' [E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v:47]
+ERROR: [VRFC 10-2991] 'mem' is not declared under prefix 'DataMem' [E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v:51]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Dec 29 03:12:06 2025
+
+INFO: [Vivado 12-12493] Simulation top is 'TestBench1_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TestBench1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Immediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineProcessor
+WARNING: [VRFC 10-2938] 'mem_rd' is already implicitly declared on line 183 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:239]
+WARNING: [VRFC 10-2938] 'mem_RegWrite' is already implicitly declared on line 185 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:240]
+WARNING: [VRFC 10-2938] 'wb_rd' is already implicitly declared on line 106 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:289]
+WARNING: [VRFC 10-2938] 'wb_RegWrite' is already implicitly declared on line 103 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:290]
+WARNING: [VRFC 10-3380] identifier 'wb_MemtoReg' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:99]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:200]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestBench1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2991] 'mem' is not declared under prefix 'DataMem' [E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v:51]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Dec 29 03:12:57 2025
+
+INFO: [Vivado 12-12493] Simulation top is 'TestBench1_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TestBench1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Immediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineProcessor
+WARNING: [VRFC 10-2938] 'mem_rd' is already implicitly declared on line 183 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:239]
+WARNING: [VRFC 10-2938] 'mem_RegWrite' is already implicitly declared on line 185 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:240]
+WARNING: [VRFC 10-2938] 'wb_rd' is already implicitly declared on line 106 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:289]
+WARNING: [VRFC 10-2938] 'wb_RegWrite' is already implicitly declared on line 103 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:290]
+WARNING: [VRFC 10-3380] identifier 'wb_MemtoReg' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:99]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:200]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestBench1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2991] 'dataMemory' is not declared under prefix 'uut' [E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v:51]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Dec 29 03:16:56 2025
+
+INFO: [Vivado 12-12493] Simulation top is 'TestBench1_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TestBench1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Immediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineProcessor
+WARNING: [VRFC 10-2938] 'mem_rd' is already implicitly declared on line 183 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:239]
+WARNING: [VRFC 10-2938] 'mem_RegWrite' is already implicitly declared on line 185 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:240]
+WARNING: [VRFC 10-2938] 'wb_rd' is already implicitly declared on line 106 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:289]
+WARNING: [VRFC 10-2938] 'wb_RegWrite' is already implicitly declared on line 103 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:290]
+WARNING: [VRFC 10-3380] identifier 'wb_MemtoReg' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:99]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:195]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:200]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestBench1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC_Unit
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.Register
+Compiling module xil_defaultlib.Immediate
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.ForwardingUnit
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.PipelineProcessor
+Compiling module xil_defaultlib.TestBench1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TestBench1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TestBench1_tb_behav -key {Behavioral:sim_1:Functional:TestBench1_tb} -tclbatch {TestBench1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TestBench1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time=0 | PC=0000000000000000 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=5000 | PC=0000000000000000 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=25000 | PC=0000000000000004 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=35000 | PC=0000000000000008 | ALU_Out=                   7 | FwdA=00 | FwdB=00
+Time=45000 | PC=000000000000000c | ALU_Out=                   2 | FwdA=00 | FwdB=00
+Time=55000 | PC=0000000000000010 | ALU_Out=                   4 | FwdA=00 | FwdB=10
+Time=65000 | PC=0000000000000014 | ALU_Out=                   6 | FwdA=01 | FwdB=10
+Time=75000 | PC=0000000000000018 | ALU_Out=                   0 | FwdA=10 | FwdB=00
+Time=85000 | PC=000000000000001c | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=95000 | PC=0000000000000020 | ALU_Out=                   0 | FwdA=10 | FwdB=10
+Time=105000 | PC=0000000000000024 | ALU_Out=                  48 | FwdA=00 | FwdB=01
+Time=115000 | PC=0000000000000028 | ALU_Out=                  48 | FwdA=00 | FwdB=00
+Time=125000 | PC=000000000000002c | ALU_Out=                  48 | FwdA=10 | FwdB=00
+Time=135000 | PC=0000000000000030 | ALU_Out=                   7 | FwdA=00 | FwdB=00
+Time=145000 | PC=0000000000000034 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=155000 | PC=0000000000000038 | ALU_Out=                  23 | FwdA=00 | FwdB=00
+Time=165000 | PC=000000000000003c | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=175000 | PC=0000000000000040 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=185000 | PC=0000000000000044 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=195000 | PC=0000000000000048 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=205000 | PC=000000000000004c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=215000 | PC=0000000000000050 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=225000 | PC=0000000000000054 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=235000 | PC=0000000000000058 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=245000 | PC=000000000000005c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=255000 | PC=0000000000000060 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=265000 | PC=0000000000000064 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=275000 | PC=0000000000000068 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=285000 | PC=000000000000006c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=295000 | PC=0000000000000070 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=305000 | PC=0000000000000074 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=315000 | PC=0000000000000078 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=325000 | PC=000000000000007c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=335000 | PC=0000000000000080 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=345000 | PC=0000000000000084 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=355000 | PC=0000000000000088 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=365000 | PC=000000000000008c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=375000 | PC=0000000000000090 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=385000 | PC=0000000000000094 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=395000 | PC=0000000000000098 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=405000 | PC=000000000000009c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=415000 | PC=00000000000000a0 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=425000 | PC=00000000000000a4 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=435000 | PC=00000000000000a8 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=445000 | PC=00000000000000ac | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=455000 | PC=00000000000000b0 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=465000 | PC=00000000000000b4 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=475000 | PC=00000000000000b8 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=485000 | PC=00000000000000bc | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=495000 | PC=00000000000000c0 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=505000 | PC=00000000000000c4 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=515000 | PC=00000000000000c8 | ALU_Out=                   x | FwdA=00 | FwdB=00
+========================================
+          SIMULATION FINISHED           
+========================================
+Register x7  :                    0
+Register x17 :                   23
+Register x18 :                    0
+Register x24 :                    0
+Memory [48]  :                    0
+========================================
+$stop called at time : 520 ns : File "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TestBench1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2519.906 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Dec 29 03:20:40 2025
+
+INFO: [Vivado 12-12493] Simulation top is 'TestBench1_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TestBench1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [SIM-utils-43] Exported 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim/instr_mem.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TestBench1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestBench1_tb_behav xil_defaultlib.TestBench1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2519.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/CompArch/ComputerArchitecture.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TestBench1_tb_behav -key {Behavioral:sim_1:Functional:TestBench1_tb} -tclbatch {TestBench1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TestBench1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time=0 | PC=0000000000000000 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=5000 | PC=0000000000000000 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=25000 | PC=0000000000000004 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=35000 | PC=0000000000000008 | ALU_Out=                   7 | FwdA=00 | FwdB=00
+Time=45000 | PC=000000000000000c | ALU_Out=                   2 | FwdA=00 | FwdB=00
+Time=55000 | PC=0000000000000010 | ALU_Out=                   4 | FwdA=00 | FwdB=10
+Time=65000 | PC=0000000000000014 | ALU_Out=                   6 | FwdA=01 | FwdB=10
+Time=75000 | PC=0000000000000018 | ALU_Out=                   0 | FwdA=10 | FwdB=00
+Time=85000 | PC=000000000000001c | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=95000 | PC=0000000000000020 | ALU_Out=                   0 | FwdA=10 | FwdB=10
+Time=105000 | PC=0000000000000024 | ALU_Out=                  48 | FwdA=00 | FwdB=01
+Time=115000 | PC=0000000000000028 | ALU_Out=                  48 | FwdA=00 | FwdB=00
+Time=125000 | PC=000000000000002c | ALU_Out=                  48 | FwdA=10 | FwdB=00
+Time=135000 | PC=0000000000000030 | ALU_Out=                   7 | FwdA=00 | FwdB=00
+Time=145000 | PC=0000000000000034 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=155000 | PC=0000000000000038 | ALU_Out=                  23 | FwdA=00 | FwdB=00
+Time=165000 | PC=000000000000003c | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=175000 | PC=0000000000000040 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=185000 | PC=0000000000000044 | ALU_Out=                   0 | FwdA=00 | FwdB=00
+Time=195000 | PC=0000000000000048 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=205000 | PC=000000000000004c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=215000 | PC=0000000000000050 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=225000 | PC=0000000000000054 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=235000 | PC=0000000000000058 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=245000 | PC=000000000000005c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=255000 | PC=0000000000000060 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=265000 | PC=0000000000000064 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=275000 | PC=0000000000000068 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=285000 | PC=000000000000006c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=295000 | PC=0000000000000070 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=305000 | PC=0000000000000074 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=315000 | PC=0000000000000078 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=325000 | PC=000000000000007c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=335000 | PC=0000000000000080 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=345000 | PC=0000000000000084 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=355000 | PC=0000000000000088 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=365000 | PC=000000000000008c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=375000 | PC=0000000000000090 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=385000 | PC=0000000000000094 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=395000 | PC=0000000000000098 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=405000 | PC=000000000000009c | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=415000 | PC=00000000000000a0 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=425000 | PC=00000000000000a4 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=435000 | PC=00000000000000a8 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=445000 | PC=00000000000000ac | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=455000 | PC=00000000000000b0 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=465000 | PC=00000000000000b4 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=475000 | PC=00000000000000b8 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=485000 | PC=00000000000000bc | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=495000 | PC=00000000000000c0 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=505000 | PC=00000000000000c4 | ALU_Out=                   x | FwdA=00 | FwdB=00
+Time=515000 | PC=00000000000000c8 | ALU_Out=                   x | FwdA=00 | FwdB=00
+========================================
+          SIMULATION FINISHED           
+========================================
+Register x7  :                    0
+Register x17 :                   23
+Register x18 :                    0
+Register x24 :                    0
+Memory [48]  :                    0
+========================================
+$stop called at time : 520 ns : File "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TestBench1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 2519.906 ; gain = 0.000
+save_wave_config {E:/CompArch/TestBench1_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse E:/CompArch/TestBench1_tb_behav.wcfg
+set_property xsim.view E:/CompArch/TestBench1_tb_behav.wcfg [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+save_wave_config {E:/CompArch/TestBench1_tb_behav.wcfg}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sim_1\new\TestBench1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\ID_EX.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\PipelineProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\CompArch\ComputerArchitecture.srcs\sources_1\new\DataMemory.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 29 03:25:23 2025...

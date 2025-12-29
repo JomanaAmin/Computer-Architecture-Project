@@ -1,0 +1,37 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Immediate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Immediate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PC_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineProcessor
+WARNING: [VRFC 10-2938] 'mem_rd' is already implicitly declared on line 181 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:229]
+WARNING: [VRFC 10-2938] 'mem_RegWrite' is already implicitly declared on line 183 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:230]
+WARNING: [VRFC 10-2938] 'wb_rd' is already implicitly declared on line 104 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:279]
+WARNING: [VRFC 10-2938] 'wb_RegWrite' is already implicitly declared on line 101 [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:280]
+WARNING: [VRFC 10-3380] identifier 'wb_MemtoReg' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:97]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:191]
+WARNING: [VRFC 10-3380] identifier 'mem_ALU_result' is used before its declaration [E:/CompArch/ComputerArchitecture.srcs/sources_1/new/PipelineProcessor.v:196]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CompArch/ComputerArchitecture.srcs/sim_1/new/TestBench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestBench1_tb
